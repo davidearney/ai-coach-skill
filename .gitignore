@@ -1,0 +1,3 @@
+# Ignore personal progress files — these stay local
+progress/*.md
+!progress/.gitkeep
