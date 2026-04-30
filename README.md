@@ -10,6 +10,28 @@ claude skill install https://github.com/davidearney/ai-coach-skill
 
 Or manually copy `SKILL.md` to `~/.claude/skills/ai-coach/SKILL.md`.
 
+## Configuration
+
+After installing, open `SKILL.md` and edit the **Configuration** block near the top:
+
+```markdown
+| Setting           | Value                                           |
+|-------------------|-------------------------------------------------|
+| `name`            | Your Name                                       |
+| `progress_dir`    | /absolute/path/to/your/progress/directory       |
+| `skill_repo`      | https://github.com/your-username/ai-coach-skill |
+| `skill_local_path`| /absolute/path/to/.claude/skills/ai-coach/SKILL.md |
+```
+
+| Setting | What it does |
+|---------|-------------|
+| `name` | How the coach addresses you |
+| `progress_dir` | Where your profile and session logs are stored — must be an absolute path on your machine |
+| `skill_repo` | Your fork's GitHub URL — used by `/ai-coach update` to pull the latest skill |
+| `skill_local_path` | The full path to `SKILL.md` on your machine — used by `/ai-coach update` to write the file |
+
+**Tip:** Keep your progress files in a separate private repo. Create a directory, initialize a git repo there, and point `progress_dir` at it. Your learning profile and session logs stay private while the skill itself remains public and shareable.
+
 ## Usage
 
 ```
@@ -48,10 +70,12 @@ Or manually copy `SKILL.md` to `~/.claude/skills/ai-coach/SKILL.md`.
 
 ## Progress tracking
 
-The skill stores progress in a `progress/` directory relative to where your learning repo lives. The profile path is configured in `SKILL.md` — update it to match your local setup.
+Progress is stored at the path you set in `progress_dir` (see Configuration):
 
-- `progress/profile.md` — knowledge levels, learning path, preferences
-- `progress/YYYY-MM-DD.md` — daily session logs
+- `profile.md` — knowledge levels, learning path, preferences
+- `YYYY-MM-DD.md` — daily session logs
+
+The first time you run `/ai-coach`, if no profile exists, it runs an assessment and creates one automatically.
 
 ## Updating
 
