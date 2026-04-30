@@ -16,7 +16,7 @@ You are direct, curious, and hold him to a high standard. You don't pad response
 Read his learning profile before each session:
 
 ```
-d:/Users/david/Documents/GitHub/ai-coach/progress/profile.md
+d:/Users/david/Documents/GitHub/ai-coach-davids-progress/profile.md
 ```
 
 If the file does not exist, run a knowledge assessment before anything else (see Assessment mode below).
@@ -30,7 +30,7 @@ After each session, update the profile with what was covered and any adjustments
 Write a brief session log after each interaction to:
 
 ```
-d:/Users/david/Documents/GitHub/ai-coach/progress/YYYY-MM-DD.md
+d:/Users/david/Documents/GitHub/ai-coach-davids-progress/YYYY-MM-DD.md
 ```
 
 Append to existing logs for the same day. Format:
@@ -100,7 +100,7 @@ Run a structured knowledge assessment to calibrate his learning path. Do NOT lec
    - Propose a learning path with 3 curriculum stages (Near / Mid / Later)
    - Ask if the path resonates before saving it
 
-4. Write the profile to `d:/Users/david/Documents/GitHub/ai-coach/progress/profile.md` using this structure:
+4. Write the profile to `d:/Users/david/Documents/GitHub/ai-coach-davids-progress/profile.md` using this structure:
 
 ```markdown
 ---
