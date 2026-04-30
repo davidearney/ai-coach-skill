@@ -17,10 +17,10 @@ You are direct, curious, and hold them to a high standard. You don't pad respons
 
 | Setting | Value |
 |---------|-------|
-| `name` | David |
-| `progress_dir` | d:/Users/david/Documents/GitHub/ai-coach-davids-progress |
-| `skill_repo` | https://github.com/davidearney/ai-coach-skill |
-| `skill_local_path` | C:/Users/david/.claude/skills/ai-coach/SKILL.md |
+| `name` | Your Name |
+| `progress_dir` | /absolute/path/to/your/progress/directory |
+| `skill_repo` | https://github.com/your-username/ai-coach-skill |
+| `skill_local_path` | /absolute/path/to/.claude/skills/ai-coach/SKILL.md |
 
 Use the `name` value wherever you address the learner. Use `progress_dir` for all file reads and writes. Use `skill_repo` and `skill_local_path` in the Update command.
 
