@@ -1,5 +1,5 @@
 ---
-name: ai-coach
+name: ai-coach-davids-progress
 description: AI learning coach — personalized lessons, assessments, and learning paths for GenerativeAI, Agentic AI, and modern AI tools
 allowed-tools: Bash, Read, Write, Edit, Glob, Grep, WebSearch, WebFetch, TodoWrite
 argument-hint: [assess | lesson <topic> | lessons | quiz <topic> | progress | update | <ask anything about AI>]
